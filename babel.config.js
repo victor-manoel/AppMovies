@@ -5,7 +5,7 @@ module.exports = {
   plugins: [
     ['@babel/plugin-transform-private-methods', { loose: false }],
     ['@babel/plugin-proposal-decorators', { 
-      legacy: true, 
+      legacy: true,
     }],
     '@babel/plugin-proposal-class-properties',
     'module:react-native-dotenv', // Para variáveis de ambiente
