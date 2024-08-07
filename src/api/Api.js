@@ -1,9 +1,9 @@
 // src/api/tmdbApi.js
 import axios from 'axios';
-import {API_KEY} from 'react-native-dotenv';
 
+const API_KEY = 'aaa0db2f38ae7f98ac1280e7d34cd5e3';
 const BASE_URL = 'https://api.themoviedb.org/3';
-const IMAGE_BASE_URL = 'https://image.tmdb.org/t/p/w500'; // URL base para imagens de largura 500px
+const IMAGE_BASE_URL = 'https://image.tmdb.org/t/p/w500';
 
 export const getPopularMovies = async () => {
   try {

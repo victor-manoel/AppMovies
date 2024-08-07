@@ -44,7 +44,7 @@ const CustomTextInput = ({
 }) => {
   return (
     <View style={styles.inputContainer}>
-      <Ionicons name={iconName} size={24} color="#fff" style={styles.icon} />
+      {/* <Ionicons name={iconName} size={24} color="#fff" style={styles.icon} /> */}
       <TextInput
         style={styles.input}
         placeholder={placeholder}
@@ -57,12 +57,12 @@ const CustomTextInput = ({
       />
       {value.length > 0 && (
         <TouchableOpacity onPress={() => onChangeText('')}>
-          <Ionicons
+          {/* <Ionicons
             name="close-circle"
             size={24}
             color="#fff"
             style={styles.clearIcon}
-          />
+          /> */}
         </TouchableOpacity>
       )}
     </View>
@@ -123,7 +123,7 @@ const Login = () => {
           source={require('../../assets/brqlogo.png')}
         />
         <CustomTextInput
-          iconName="house"
+          // iconName="house"
           placeholder="Usuário"
           value={email}
           onChangeText={setEmail}
@@ -131,7 +131,7 @@ const Login = () => {
           autoCapitalize="none"
         />
         <CustomTextInput
-          iconName="house"
+          // iconName="house"
           placeholder="Senha"
           value={password}
           onChangeText={setPassword}
